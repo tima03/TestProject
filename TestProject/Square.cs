@@ -13,6 +13,7 @@ namespace TestProject
         private double Height, Width;
 
         public Square() {
+            this.SetName("Square");
             this.Width = 0;
             this.Height = 0;
             this.SetArea(Width * Height);
@@ -20,8 +21,9 @@ namespace TestProject
 
         public Square(float width, float height)
         {
-            this.Width = width;
-            this.Height = height;
+            this.SetName("Square");
+            if (width > 0) { this.Width = width; } else { this.Width = 0; }
+            if (height > 0) { this.Height = height; } else { this.Height = 0; }
             this.SetArea(Width * Height);
         }
 

@@ -15,6 +15,7 @@ namespace TestProject
 
         public Triangle()
         {
+            this.SetName("Triangle");
             this.A_Side = 0;
             this.B_Side = 0;
             this.C_Side = 0;
@@ -32,6 +33,7 @@ namespace TestProject
 
         public Triangle(double a_side, double a_height)
         {
+            this.SetName("Triangle");
             this.A_Side = a_side;
             this.B_Side = 0;
             this.C_Side = 0;
@@ -47,6 +49,7 @@ namespace TestProject
 
         public Triangle(double a_side, double b_side, double c_side)
         {
+            this.SetName("Triangle");
             this.A_Side = a_side;
             this.B_Side = b_side;
             this.C_Side = c_side;

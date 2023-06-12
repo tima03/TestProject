@@ -17,6 +17,7 @@ namespace TestProject
         }
 
         public Figure(string name) {
+            this.Name = "Empty";
             this.Name = name;
             this.X = 0;
             this.Y = 0;
@@ -25,6 +26,7 @@ namespace TestProject
 
         public Figure(string name, double x, double y)
         {
+            this.Name = "Empty";
             this.Name = name;
             this.X = x;
             this.Y = y;

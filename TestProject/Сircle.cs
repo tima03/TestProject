@@ -12,6 +12,7 @@ namespace TestProject
 
         public Circle()
         {
+            this.SetName("Circle");
             this.Radius = 0;
             this.Diameter = this.Radius * 2;
             this.SetArea(this.GetAreaByRadius());
@@ -19,7 +20,8 @@ namespace TestProject
 
         public Circle(double radius)
         {
-            this.Radius = radius;
+            this.SetName("Circle");
+            if (radius > 0) { this.Radius = radius; } else { this.Radius = 0; }
             this.Diameter = this.Radius * 2;
             this.SetArea(this.GetAreaByRadius());
         }
