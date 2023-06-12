@@ -99,17 +99,17 @@ namespace TestProject
         }
 
         public double GetAB_AngleByThreeSides() {
-            return Math.Acos((Math.Pow(A_Side, 2) + Math.Pow(C_Side, 2) - Math.Pow(B_Side, 2)) / (2 * A_Side * C_Side));
+            return Math.Acos((Math.Pow(A_Side, 2) + Math.Pow(C_Side, 2) - Math.Pow(B_Side, 2)) / (2 * A_Side * C_Side))*180/Math.PI;
         }
 
         public double GetBC_AngleByThreeSides()
         {
-            return Math.Acos((Math.Pow(A_Side, 2) + Math.Pow(B_Side, 2) - Math.Pow(C_Side, 2)) / (2 * A_Side * B_Side));
+            return Math.Acos((Math.Pow(A_Side, 2) + Math.Pow(B_Side, 2) - Math.Pow(C_Side, 2)) / (2 * A_Side * B_Side)) * 180 / Math.PI;
         }
 
         public double GetCA_AngleByThreeSides()
         {
-            return Math.Acos((Math.Pow(B_Side, 2) + Math.Pow(C_Side, 2) - Math.Pow(A_Side, 2)) / (2 * C_Side * B_Side));
+            return Math.Acos((Math.Pow(B_Side, 2) + Math.Pow(C_Side, 2) - Math.Pow(A_Side, 2)) / (2 * C_Side * B_Side)) * 180 / Math.PI;
         }
 
         public double GetA_HeightByThreeSides()
@@ -127,6 +127,19 @@ namespace TestProject
             return 2 * this.GetAreaByThreeSides() / C_Side;
         }
 
+        public bool CheckRightTriangle() {
+            if ((AB_Angle == 90) || (BC_Angle == 90) || (CA_Angle == 90))
+            { return true; }
+            else
+            { return false; }
+        }
+        public void PrintIfRightTriangle()
+        {
+            if ((AB_Angle == 90) || (BC_Angle == 90) || (CA_Angle == 90))
+            { Console.WriteLine("Треугольник прямоугольный"); }
+            else
+            { Console.WriteLine("Треугольник не прямоугольный"); }
+        }
         public void PrintA_Side() => Console.WriteLine($"Сторона А треугольника - {A_Side}");
         public void PrintB_Side() => Console.WriteLine($"Сторона B треугольника - {B_Side}");
         public void PrintC_Side() => Console.WriteLine($"Сторона C треугольника - {C_Side}");
