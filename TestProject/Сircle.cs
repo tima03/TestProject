@@ -6,18 +6,18 @@ using System.Threading.Tasks;
 
 namespace TestProject
 {
-    public class Сircle : Figure
+    public class Circle : Figure
     {
         private double Radius, Diameter;
 
-        public Сircle()
+        public Circle()
         {
             this.Radius = 0;
             this.Diameter = this.Radius * 2;
             this.SetArea(this.GetAreaByRadius());
         }
 
-        public Сircle(double radius)
+        public Circle(double radius)
         {
             this.Radius = radius;
             this.Diameter = this.Radius * 2;
@@ -25,8 +25,8 @@ namespace TestProject
         }
 
 
-        public void SetRadius(double radius) => this.Radius = radius;
-        public void SetDiameter(double diameter) => this.Diameter = diameter;
+        public void SetRadius(double radius) { if (radius > 0) { this.Radius = radius; } else { this.Radius = 0; } }
+        public void SetDiameter(double diameter) { if (diameter > 0) { this.Diameter = diameter; } else { this.Diameter = 0; } }
 
         public double GetRadius() { return this.Radius; }
         public double GetDiameter() { return this.Diameter; }

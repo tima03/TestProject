@@ -25,9 +25,9 @@ namespace TestProject
             this.SetArea(Width * Height);
         }
 
-        public void SetWidth(double width) => this.Width = width;
-        public void SetHeight(double height) => this.Height = height;
-    
+        public void SetWidth(double width) { if (width > 0) { this.Width = width; } else { this.Width = 0; } }
+        public void SetHeight(double height) { if (height > 0) { this.Height = height; } else { this.Height = 0; } }
+
         public double GetWidth() { return this.Width; }
         public double GetHeight() { return this.Height; }
 

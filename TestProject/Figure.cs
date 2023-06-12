@@ -34,7 +34,7 @@ namespace TestProject
         public void SetName(string name) => this.Name = name;
         public void SetX(double x) => this.X = x;
         public void SetY(double y) => this.Y = y;
-        public void SetArea(double area) => this.Area = area;
+        public void SetArea(double area) { if (area > 0) { this.Area = area; } else { this.Area = 0; } }
 
         public string GetName() { return this.Name; }
         public double GetX() { return this.X; }
