@@ -42,9 +42,10 @@ namespace TestProject
         public double GetArea() { return this.Area; }
 
         public void PrintName() => Console.WriteLine($"Фигура - {Name}");
-        public void PrintX() => Console.WriteLine($"Координата X центра фигуры- {X}");
-        public void PrintY() => Console.WriteLine($"Координата Y центра фигуры- {Y}");
-        public void PrintXY() => Console.WriteLine($"Координаты центра фигуры- {X},{Y}");
+        public void PrintX() => Console.WriteLine($"Координата X центра фигуры - {X}");
+        public void PrintY() => Console.WriteLine($"Координата Y центра фигуры - {Y}");
+        public void PrintXY() => Console.WriteLine($"Координаты центра фигуры - {X},{Y}");
+        public void PrintArea() => Console.WriteLine($"Площадь фигуры - {Area}");
     }
 
 }
