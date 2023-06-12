@@ -91,11 +91,11 @@ namespace TestProject
 
         public double GetAreaByHeightAndSide()
         {
-            return 1 / 2 * (A_Side * A_Height);
+            return  (this.A_Side * this.A_Height)/2;
         }
 
         public double GetAreaByTwoSidesAndAngle() {
-            return 1 / 2 * (A_Side * B_Side * Math.Sin(AB_Angle));
+            return (1 / 2) * (A_Side * B_Side * Math.Sin(AB_Angle));
         }
 
         public double GetAB_AngleByThreeSides() {
