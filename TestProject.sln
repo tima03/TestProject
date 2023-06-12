@@ -5,7 +5,12 @@ VisualStudioVersion = 17.6.33712.159
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestProject", "TestProject\TestProject.csproj", "{59C6B271-F556-4BFD-AD70-1622FFFC3B21}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTests.Tests", "UnitTests.Tests\UnitTests.Tests.csproj", "{694C0916-BC11-468A-BC44-E67B63A04C4E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UnitTests.Tests", "UnitTests.Tests\UnitTests.Tests.csproj", "{694C0916-BC11-468A-BC44-E67B63A04C4E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Элементы решения", "Элементы решения", "{54C545D7-AA61-4BA6-8600-0F5725BACF82}"
+	ProjectSection(SolutionItems) = preProject
+		Задание3.txt = Задание3.txt
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
