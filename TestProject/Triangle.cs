@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TestProject
 {
-    internal class Triangle:Figure
+    public class Triangle:Figure
     {
         private double A_Side, B_Side, C_Side;
         private double A_Height,B_Height, C_Height;

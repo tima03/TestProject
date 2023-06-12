@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TestProject
 {
-    internal class Сircle : Figure
+    public class Сircle : Figure
     {
         private double Radius, Diameter;
 

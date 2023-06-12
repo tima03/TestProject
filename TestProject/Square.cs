@@ -8,7 +8,7 @@ using System.Xml.Linq;
 
 namespace TestProject
 {
-    internal class Square:Figure
+    public class Square:Figure
     {
         private double Height, Width;
 
